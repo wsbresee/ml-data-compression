@@ -1,0 +1,38 @@
+Introduction
+    This project is based on two simple questions: To what degree of success can
+    ML models be used as lossy audio compression algorithms? And, at higher
+    rates of loss, does it sound cool?
+
+    Our experiments will begin with audio, and our baseline for the project will
+    consist of experiments with an audio dataset of relatively low variance.
+    We'll move beyond this baseline by expanding the range of audio we'll use as
+    a dataset, and then explore using audio-trained models to compress images.
+
+    Part of our project will be the development of a software tool for exploring
+    and comparing compression algorithms. The software tool will include
+    visualizations of pre- and post-compression data, as well as some degree of
+    interactivity.
+
+Data
+    Our baseline dataset will be an accumulation of snare drum samples from
+    various commercially or publicly available sample libraries. As we progress,
+    additional data could include other types of samples, non-sample audio
+    files, and non-audio filetypes. Specifically, we're curious how ML
+    models trained on one sort of audio will compress audio of another sort,
+    and how ML models trained on audio will compress images.
+
+Related Work
+    Let's fill this in with google drive
+
+Method
+    Our baseline algorithm will be PCA, and we'll likely use the sklearn
+    implementation. We'll then try constructing a linear neural network
+    with PyTorch, and will try various network dimensions to see what works.
+    We may be able to explore other forms of ANNs, beginning with adding some
+    convolutional layers.
+
+Evaluation
+    % signal loss, difference between original and post-compression
+    reconstruction
+    Compare to existing methods of compression (MP3)
+    Bonus: does it sound cool?
